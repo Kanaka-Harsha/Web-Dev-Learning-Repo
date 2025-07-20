@@ -8,6 +8,8 @@ const student =
     dept: "iot"
 };
 
+.
+
 const {name: newName, dept: newDept} = student; // alising or renaming
 
 console.log(newName);
