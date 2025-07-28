@@ -1,0 +1,73 @@
+body
+{
+    background-color:rgb(99, 173, 237);
+    width:auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family:cursive;
+    color: white; /* Added for better text visibility */
+}
+
+/* CORRECTED: Selects the correct ID for the form container */
+#cont-form 
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px; /* This was likely intended for the container, not the form itself */
+}
+
+#form
+{
+    width:250px;
+    height:250px;
+    background-image: radial-gradient(circle, yellow, green);
+    border-radius:10px;
+    padding: 50px;
+    display: flex; /* Added for better internal layout */
+    flex-direction: column; /* Added for better internal layout */
+    justify-content: center; /* Added for better internal layout */
+    gap: 10px; /* Added for spacing between form elements */
+}
+
+label
+{
+    background-color: aliceblue;
+    border-radius:50px;
+    width:15px;
+    height:15px;
+    color: black; /* Added so text inside label is visible */
+    padding: 5px; /* Added for spacing */
+}
+
+input,button{
+    border-radius:5px;
+    border: none; /* Corrected from invalid value */
+    padding: 5px; /* Added for better aesthetics */
+}
+
+input:hover,button:hover
+{
+    background-color: rgb(142, 142, 224);
+}
+
+/* CORRECTED: Table styling is now complete and functional */
+table
+{
+    border-collapse: collapse; /* Makes borders look cleaner */
+    width: 80%; /* Give table a nice width */
+    margin-top: 20px;
+    text-align: left;
+}
+
+th, td {
+    border: 2px solid white; /* Apply border to all cells */
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50; /* Add a header color */
+}
